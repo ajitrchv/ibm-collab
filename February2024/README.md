@@ -1,9 +1,9 @@
 		February ’24
 
 
-#07 Feb
+# 07 Feb
 
-##Deleting formation
+## Deleting formation
 
 ```kubectl delete formation <formation_id> -n <namespace>```
 NB: If we target the formation, there is no need for namespaceTesting rotate-backups recipe
@@ -17,7 +17,7 @@ kubectl get <etcd-pod-name> -c mgmt
 
 
 
-#06 Feb
+# 06 Feb
 
 Todays Final Milvyas-formation-id : 8a42c750-da10-4e31-9bbe-8e2caf4e220d == errored as the operator changed.
 
@@ -40,12 +40,12 @@ get the name with appended -bucket at the end.
 
 will get all the values base64 encoded.
 
-##Restore
+## Restore
 
 ```i rc restore source_formation_id='ff453fb6-c71f-413c-96a9-79743675be96' backup_id='ff453fb6-c71f-413c-96a9-79743675be96' cos_bucket='ff453fb6-c71f-413c-96a9-79743675be96' cos_endpoint='s3.direct.eu.cloud-object-storage.appdomain.cloud' cos_region='eu-standard' cos_access_key='fd0121758cf8491cb07acc42d76dfd32' cos_secret_access_key='2c43a44c9ee72cfa001fd18a9561545c315ce1e80f6db331' name='ff453fb6-c71f-413c-96a9-79743675be96' restore_data='{"archive_name":"91853d6b-7cb2-4ed5-9a86-fa7626e62470.tar.gz","cos_key":"etcd_backup/account/66c8bc40f9b94f079bf179c863e51df8/formation/ff453fb6-c71f-413c-96a9-79743675be96/ff453fb6-c71f-413c-96a9-79743675be96.tar.gz"}'```
 
 
-##DB Version Change
+## DB Version Change
 
 ```i rc db-version-change version=1.1.2.0.99```
 
@@ -58,15 +58,15 @@ Adding comments to the formation
 ```databases.cloud.ibm.com/note: '[2024-06-02] milvus test (Abhirami)'```
 
 
-#05 Feb
+# 05 Feb
 
-##Currents 
+## Currents 
 
 API-KEY : VB90RbsF-0t3g9N4V1n9LSfv9gHraNygpVBlwdZ5Pw-y
 LH-FormationID:  
 
  
-##Setting up from eu-de
+## Setting up from eu-de
 
 * Create lakehouse formation on eu-de
 * Target data plane <— fihjl —>
@@ -97,7 +97,7 @@ Run the following
 ```python3 hello-milvus.py```
 
 
-##Editing CronJob
+## Editing CronJob
 
     - To list all the corncobs available
 ```kubectl get cronjob```
@@ -119,7 +119,7 @@ The above edited cronjob will trigger at  the time specified in the cronjob
 
 
 
-#01 Feb
+# 01 Feb
 
 
 Lakehouse formation: 3502591a-603f-48c3-adc0-d962fd36f119 
